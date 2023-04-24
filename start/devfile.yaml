@@ -23,7 +23,7 @@ components:
         memoryLimit: 4927M
         mountSources: true
         volumeMounts:
-        - name: zosconnect
+          - name: zosconnect
     - name: zosconnect
       volume:
         size: 1G
