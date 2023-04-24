@@ -22,3 +22,8 @@ components:
         image: icr.io/zosconnect/ibm-zcon-designer:3.0.66
         memoryLimit: 4927M
         mountSources: true
+        volumeMounts:
+        - name: zosconnect
+    - name: zosconnect
+    volume:
+      size: 1G
