@@ -14,7 +14,6 @@ components:
         image: icr.io/zosconnect/ibm-zcon-designer:3.0.66
         memoryLimit: 4927M
         mountSources: true
-        command: ["/bin/sh", "-c", "/opt/ibm/wlp/bin/server run defaultServer --clean"]
         env:
         - name: ZCON_DESIGNER_PROJECT
           value: /projects/employees-api/start
