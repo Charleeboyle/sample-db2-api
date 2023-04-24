@@ -25,5 +25,5 @@ components:
         volumeMounts:
         - name: zosconnect
     - name: zosconnect
-    volume:
-      size: 1G
+      volume:
+        size: 1G
