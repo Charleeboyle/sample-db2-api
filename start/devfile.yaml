@@ -7,7 +7,7 @@ projects:
       checkoutFrom:
         revision: main
       remotes:
-        origin: 'https://github.com/zosconnect/sample-db2-api.git'
+        origin: 'https://github.com/charleeboyle/sample-db2-api.git'
 components:
     - name: zosconnect-ui
       container:
