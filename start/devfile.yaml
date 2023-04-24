@@ -11,17 +11,17 @@ projects:
 components:
     - name: zosconnect-ui
       container:
+        image: icr.io/zosconnect/ibm-zcon-designer:3.0.66
+        memoryLimit: 4927M
+        mountSources: true
+        env:
+        - name: ZCON_DESIGNER_PROJECT
+          value: /projects/employees-api/finish
         endpoints:
           - name: zosconnect-ui
             targetPort: 9080
             exposure: public
-            protocol: http 
-        env:
-        - name: ZCON_DESIGNER_PROJECT
-          value: /projects/employees-api/start
-        image: icr.io/zosconnect/ibm-zcon-designer:3.0.66
-        memoryLimit: 4927M
-        mountSources: true
+            protocol: http
         volumeMounts:
           - name: zosconnect
     - name: zosconnect
