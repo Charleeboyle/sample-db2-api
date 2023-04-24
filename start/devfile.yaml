@@ -16,7 +16,7 @@ components:
         mountSources: true
         env:
         - name: ZCON_DESIGNER_PROJECT
-          value: /projects/employees-api/finish
+          value: /projects/employees-api/start
         endpoints:
           - name: zosconnect-ui
             targetPort: 9080
