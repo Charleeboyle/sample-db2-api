@@ -1,6 +1,8 @@
 schemaVersion: 2.1.0
 metadata:
   name: sample-db2-api
+attributes:
+  persistVolumes: 'false'
 projects:
   - name: employees-api
     git:
