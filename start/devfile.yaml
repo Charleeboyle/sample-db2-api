@@ -2,7 +2,7 @@ schemaVersion: 2.1.0
 metadata:
   name: sample-db2-api
 attributes:
-  persistVolumes: 'false'
+  controller.devfile.io/storage-type: ephemeral
 projects:
   - name: employees-api
     git:
