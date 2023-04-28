@@ -1,6 +1,8 @@
 schemaVersion: 2.1.0
 metadata:
   name: sample-db2-api
+attributes:
+  controller.devfile.io/storage-type: ephemeral
 projects:
   - git:
       checkoutFrom:
@@ -24,6 +26,14 @@ components:
         env:
           - name: ZCON_DESIGNER_PROJECT
             value: /projects/employees-api/start
+          - name: DB2_HOST
+            value: <db2host>
+          - name: DB2_PORT
+            value: <port>
+          - name: DB2_USERNAME
+            value: <db2username>
+          - name: DB2_PASSWORD
+            value: <db2password>
         image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.66'
         memoryLimit: 4927M
         mountSources: true
